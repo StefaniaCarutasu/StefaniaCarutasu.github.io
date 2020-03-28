@@ -155,7 +155,7 @@ body
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: blanchedalmond;
+  background-color: #ffebcd;
 }
 
 .container:hover .overlay {
