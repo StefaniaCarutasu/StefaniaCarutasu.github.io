@@ -129,7 +129,9 @@ html{
 
 /* fundal gri la trecerea cu cursorul */
 .dropdown-content a:hover {
-  background-color: #ddd; 
+  background-color: #e3caa6; 
+  transition: background-color 0.5s;
+  width: 83%;
 }
 
 /* dropdown menu la trecerea cu cursorul */
@@ -194,9 +196,8 @@ footer
       
     }
     .Titlu_pagina{
-      height: 200px;
-      align-self: center;
-      left: 35%;
+      margin-left: auto;
+      margin-right: auto;
     }
     .header{
       display: block;
@@ -218,25 +219,41 @@ footer
 #gr section:nth-child(3)
 {
     grid-area: 1/1/1/1;
+    margin-left: auto;
+    margin-right: auto;
 }
 .column {
     flex: 50%;
     width: 100%;
   }
-    .header{display: block;}
-    .Titlu_pagina{
-      height: 200px;;
-      align-self: center;
-      left: 35%;
-    }
+  .Titlu_pagina{
+    margin-left: auto;
+    margin-right: auto;
+    padding:-15px;
+  }
+  .header{
+    display: block;
+    align-self: center;
+  }
     .dropdown{
       width: 100%;
     }
     .buton_dropdown{
-      width: 100%;
+    width: 100%;
     float: none;
     display: block;
     text-align: left;
     }
+    .dropdown-content{
+      width:auto;
+    }
 
+  }
+  @media screen and (max-width: 460px)
+  {
+    .dropdown-content a
+    {
+      font-size: 12px;
+      text-align: left;
+    }
   }
