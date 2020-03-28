@@ -20,8 +20,6 @@ body
   flex-direction: row;
 }
 
-
-
 .galerie
 {
   display: block;
@@ -87,7 +85,7 @@ footer
   font-size: 65%;
 }
 /* Responsive 1 singura coloana */
-@media screen and (min-width: 500px) and(max-width: 800px) {
+@media screen and (min-width: 460px) and (max-width: 800px) {
 
   html{
     margin: 0px;
@@ -112,7 +110,7 @@ footer
   .header{
     display: block;
     align-self: center;
-    }
+  }
   .dropdown{
     width: 100%;
     }
@@ -130,6 +128,10 @@ footer
   .Titlu_pagina{
     margin-left: auto;
     margin-right: auto;
+  }
+  .header{
+    display: block;
+    align-self: center;
   }
 main
 { right: 0%;
