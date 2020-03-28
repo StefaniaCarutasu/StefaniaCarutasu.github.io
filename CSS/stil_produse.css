@@ -182,7 +182,7 @@ footer
   font-size: 65%;
 }
 /* Responsive 1 singura coloana */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
 
   html{
     margin: 0px;
@@ -202,7 +202,6 @@ footer
   }
   .Titlu_pagina{
     height: 200px;
-    width:100%;
     align-self: center;
     left: 35%;
     }
@@ -222,11 +221,10 @@ footer
 }
 
 /* Responsive o coloana */
-@media screen and (max-width: 400px) 
+@media screen and (max-width: 500px) 
 {
   .Titlu_pagina{
     height: auto;
-    width:100%;
     align-self: center;
     left: 50%;
   }
