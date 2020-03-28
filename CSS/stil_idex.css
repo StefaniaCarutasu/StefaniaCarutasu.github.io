@@ -147,7 +147,7 @@ html{
 /* 3 coloane */
 .column {
   flex: 25%;
-  max-width: 33%;
+  width: 33%;
   padding: 0 4px;
 }
 
@@ -157,30 +157,7 @@ html{
   width: 100%;
 }
 
-.container_img {
-  position: relative;
-  width: 100%; /* Maximum width */
-  margin: 0 auto; /* Center it */
-  height: 50%;
-  z-index: -1;
-}
 
-.container_img .continut {
-  position: absolute; /* Position the background text */
-  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
- /* background: rgb(29, 26, 26); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: blanchedalmond; 
-  width: 100%; /* Full width */
-  padding-left: 5%; /* Some padding */
-  column-fill: auto;
-  height: 40%;
-  margin-bottom: 0px;
-  text-align: justify;
-}
-.continut h4{
-  margin-top: 0px;
-}
 footer
 {
   text-align: center;
@@ -188,7 +165,8 @@ footer
   font-size: 65%;
 }
 /* Responsive 1 singura coloana */
-@media screen and (max-width: 800px) {
+@media screen and (min-width:500px) and (max-width: 800px) 
+{
   .column {
     flex: 50%;
     max-width: 100%;
@@ -209,7 +187,7 @@ footer
   }
   #gr section:nth-child(3)
   {
-      grid-area: 1/1/1/1;
+      grid-area: 1/1/2/2;
       margin-left: auto;
       margin-right: auto;
       
@@ -227,7 +205,7 @@ footer
 }
 
 /* Responsive o coloana */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   main{ 
   right: 0%;
   align-items: center;
