@@ -1,18 +1,3 @@
-html{
-   background-color:  #1a1a1a;
-  }
-.header{
-  display: inline-flex;
-  flex-direction: row;
-  width:100%
-}
-
-.Titlu_pagina{
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*CSS pentru impartirea pe coloane a paginii*/
 .grid{
     display: block;
@@ -40,7 +25,7 @@ html{
     display: inline-block;
     z-index: -1;
 }
-
+/*mini galeria*/
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +46,6 @@ html{
   vertical-align: middle;
   width: 100%;
 }
-
 
 footer
 {
