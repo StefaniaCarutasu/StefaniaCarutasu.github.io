@@ -19,6 +19,9 @@
   width: 85%;
   box-sizing: border-box;
   padding-left: 0px;
+  margin-block-end: auto;
+  margin-inline-start: auto;
+    margin-inline-end: auto;
 }
 
 .image {
@@ -64,7 +67,14 @@ footer
   color: blanchedalmond;
   font-size: 65%;
 }
-/* Responsive 1 singura coloana */
+@media (min-width: 992px) and (max-width: 1199.98px) 
+{
+  .gr{
+    grid-template-columns: auto auto auto;
+
+  }
+}
+/* Responsive 2 coloane */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .navbar{
     width: 100%;
@@ -105,7 +115,7 @@ main
 
 }
 .gr{
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
 }
 .navbar{
   width: 100%;

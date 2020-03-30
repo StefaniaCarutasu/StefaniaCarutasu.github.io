@@ -11,19 +11,23 @@
 {
   color: blanchedalmond;
   position: relative;
-  text-align: left;
+  text-align: justify;
   display: block;
   display: inline-block;
   z-index: -1;
 }
 
-#gr section:nth-child(3){
+#gr div:nth-child(3){
     color: blanchedalmond;
     position: relative;
     text-align: left;
     display: block;
     display: inline-block;
-    z-index: -1;
+    z-index: -1;   
+}
+#gr table
+{
+  box-shadow: burlywood 0px 0px 8px;
 }
 /*mini galeria*/
 .row {
@@ -47,13 +51,8 @@
   width: 100%;
 }
 
-footer
-{
-  text-align: center;
-  color: blanchedalmond;
-  font-size: 65%;
-}
-/* Responsive 1 singura coloana */
+
+/* Responsive 2 coloane */
 @media screen and (min-width: 768px) and (max-width: 991.98px)
 {
   .column {
@@ -69,36 +68,23 @@ footer
       grid-template-columns: auto;
       width: 100%;
   }
-  #gr section:nth-child(3)
+  #gr div:nth-child(3)
   {
       grid-area: 1/1/2/2;
       margin-left: auto;
       margin-right: auto;
       
     }
-    .Titlu_pagina{
-      margin-left: auto;
-      margin-right: auto;
-      left: 0%;
-    }
-    .header{
-      display: block;
-      align-self: center;
-    }
+    
 }
 
 /* Responsive o coloana */
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
-  main{ 
-  right: 0%;
-  align-items: center;
-  margin-right: 0px;
-}
 
 #gr{
     grid-template-columns: auto;
 }
-#gr section:nth-child(3)
+#gr div:nth-child(3)
 {
     grid-area: 1/1/1/1;
     margin-left: auto;
@@ -107,15 +93,6 @@ footer
 .column {
     flex: 50%;
     width: 100%;
-  }
-  .Titlu_pagina{
-    margin-left: auto;
-    margin-right: auto;
-    left: 50%;
-  }
-  .header{
-    display: block;
-    align-self: center;
   }
 
   }
@@ -130,7 +107,7 @@ footer
     #gr{
         grid-template-columns: auto;
     }
-    #gr section:nth-child(3)
+    #gr div:nth-child(3)
     {
         grid-area: 1/1/1/1;
         margin-left: auto;
@@ -140,13 +117,5 @@ footer
         flex: 50%;
         width: 100%;
       }
-      .Titlu_pagina{
-        margin-left: auto;
-        margin-right: auto;
-        left: 15%;
-      }
-      .header{
-        display: block;
-        align-self: center;
-      }
+      
   }
