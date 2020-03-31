@@ -4,18 +4,31 @@ html{
 form {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-self: center;
+    
   }
   form label{
       color: blanchedalmond;
       font-family: arial, sans-serif;
+      width: 40%;
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
   }
   form input{
     font-style: italic;
     color: gray;
+    width: 30%;
+    text-align: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    background-color: cornsilk;
+  }
+  form input:hover{
+      box-shadow: rgb(201, 140, 50) 0px 0px 8px;
+      transition: box-shadow 0.5s;
   }
   h3{
       text-align: center;
@@ -24,7 +37,7 @@ form {
  
   
   @media screen and (max-width: 575.98px;) {
-      form{
+      form input{
           width: 100%;
           margin-left: 5%;
           margin-right: 5%;
