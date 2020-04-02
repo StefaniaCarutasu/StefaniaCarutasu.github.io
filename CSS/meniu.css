@@ -11,10 +11,6 @@ body{
 .Titlu_pagina{
 	margin-left: auto;
 	margin-right: auto;
-	margin-block-end: auto;
-	margin-block-start: 10px;
-	margin-inline-start: auto;
-	margin-inline-end: auto;
 	display: block;
 }
 .Titlu_pagina img{
@@ -27,13 +23,10 @@ nav{
 	left: 2%;
   z-index: 1;
   list-style-type: none;
-  margin-block-start: auto;
-  margin-block-end: auto;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+ 
 }
 
-ol#meniu, ol#submeniu{
+ul#meniu, ul#submeniu{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -41,7 +34,7 @@ ol#meniu, ol#submeniu{
 	
 }
 
-ol#meniu>li>a, #submeniu>li>a{
+ul#meniu>li>a, #submeniu>li>a{
 	display: block;
 	overflow: hidden;
 	color: blanchedalmond;
@@ -56,7 +49,7 @@ background-color: blanchedalmond;
 color: brown;
 }
 
-ol#submeniu{
+ul#submeniu{
 	position: absolute;
 	display: none;
 	z-index: 1;
@@ -155,10 +148,6 @@ li a:hover{
 	{
 	margin-left: auto;
 	margin-right: auto;
-	margin-block-end: auto;
-	margin-block-start: auto;
-	margin-inline-start: auto;
-	margin-inline-end: auto;
 	padding-top: 10%;
 	}
 	nav{
@@ -171,10 +160,6 @@ li a:hover{
 	.Titlu_pagina{
 	margin-left: auto;
 	margin-right: auto;
-	margin-block-end: auto;
-	margin-block-start: auto;
-	margin-inline-start: auto;
-	margin-inline-end: auto;
 	padding-top: 10%;
 	  }
 	  nav{
@@ -192,9 +177,6 @@ li a:hover{
 	.Titlu_pagina{
 		margin-left: auto;
 		margin-right: auto;
-	margin-block-start: auto;
-	margin-inline-start: auto;
-	margin-inline-end: auto;
 		padding-top: 10%;
 	  }
 	  nav{
@@ -211,10 +193,6 @@ li a:hover{
 		display: block;
 		margin-left: auto;
 	margin-right: auto;
-	margin-block-end: auto;
-	margin-block-start: auto;
-	margin-inline-start: auto;
-	margin-inline-end: auto;
 		padding-top: 15%;
 	}
 	nav{
