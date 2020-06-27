@@ -17,7 +17,7 @@ function afisVarsta()
         var minutes=date.getMinutes();
         var seconds=date.getSeconds();
         var v="";
-        var l = 12 - (parseInt(varsta[1],10) + 1) -1 + month; //numarul de luni;
+        var l = 12 - (parseInt(varsta[1],10) - 1) -1 + month; //numarul de luni;
         var z = 31 - parseInt(varsta[0],10) + day; //numarul de zile
         if(z >= 31)
         {

@@ -26,10 +26,24 @@
 							<input type="text" placeholder="Email" name="email" required>
 							<label for = "parola"><b>Parola</b></label>
 							<input type="password" placeholder="Parola" name="parola" required>
+							<label>Oras:
+								<select name="oras">
+									<option value="Bucuresti">Bucuresti</option>
+									<option value="Ploiesti">Cluj</option>
+									<option value="Iasi" selected>Iasi</option>
+									<option value="Brasov">Cluj</option>
+									<option value="Constanta" >Constanta</option>
+									<option value="Timisoara">Timisoara</option>
+									<option value="Cluj">Cluj</option>
+									<option value="Targoviste">Cluj</option>
+
+								</select>
+							</label>
 							<div class = "clearfix">
 								<button type="button" onclick = "document.getElementById('SgnUpForm').style.display='none'" class = "cancelbtn"> Cancel</button>
 								<button type="submit" class="signupbtn">Sign Up</button>
 							</div>	
+							
 						</div>
 						</form>
 						 <% } else if(rsstatus=="ok"){ %>
@@ -74,17 +88,15 @@
 			</nav>
         </div>
         <div class="Titlu_pagina">
-			<img   src="Poze/logo1.png" alt="Sigla pagina">
-			
+			<div><img src="Poze/logo1.png" alt="Sigla pagina"></div>
 			<div id="getVarsta">
 				<p>Introduceti data nasterii in formatul dd#mm#yyyy:</p>
 				<div id="inputForm">
-					<input type="text" id="myAge">
+					<input type="text" id="myAge" onkeypress="tastaApasata()">
 					<button type = "button" id = "butonVarsta">Try it</button>
 				</div>
 				<span id="varsta"></span>
-				</div>	
-				
+			</div>
         </div>
         </div>
     </header>

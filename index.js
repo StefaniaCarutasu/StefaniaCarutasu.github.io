@@ -31,7 +31,6 @@ app.post('/inreg', function(req, res) {
 
 		//in fields proprietatile sunt valorile atributelor name din inputurile din formular
 		// <input type="text" name="username" 
-		console.log(fields.username)
 		fisierUseri=fs.readFileSync("resurse/JSON/useri.json");
 		var parolaCriptata;
 		//al doilea argument e parola(cheia) de criptare
@@ -45,12 +44,12 @@ app.post('/inreg', function(req, res) {
         nume: fields.nume,
 		prenume: fields.prenume,
 		email: fields.email,
-        parola: parolaCriptata,
+		parola: parolaCriptata,
+		oras: fields.oras,
         dataInreg: new Date(),
         rol: "user"
 			}
 		obUseri.useri.push(userNou);
-		console.log(fields.parola);
     obUseri.lastId++;
 		var jsonNou=JSON.stringify(obUseri);
 		fs.writeFileSync("resurse/JSON/useri.json",jsonNou );
@@ -66,9 +65,6 @@ app.post('/login',function(req,res) {
 		//fields e pentru restul de inputuri <input name="ceva" ---> fields.ceva
 		var textJson=fs.readFileSync("resurse/JSON/useri.json","utf8"); //cale relativa la fisierul index.js
 		var obJson=JSON.parse(textJson);
-		console.log(obJson.useri);
-		console.log(fields.username);
-		console.log(fields.parola);
 		var parolaCriptata;
 		var algoritmCriptare=crypto.createCipher("aes-128-cbc", "parola_criptare")
 		parolaCriptata=algoritmCriptare.update(fields.parola, "utf-8","hex");
@@ -80,7 +76,6 @@ app.post('/login',function(req,res) {
 		console.log(user);
 		
 		if(user){
-			console.log("Exista utilizatorul")
 			req.session.utilizator=user;
 			res.render("html/rezervari2", {username: user.username})
 		}
@@ -96,7 +91,7 @@ app.post('/login',function(req,res) {
 
 app.get("/logout", function(req, res) {
 	req.session.destroy();
-	res.redirect("/")
+	res.redirect("/index")
 });
 
 // cand se face o cerere get catre pagina de index 

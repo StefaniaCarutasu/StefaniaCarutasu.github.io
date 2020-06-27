@@ -4,7 +4,7 @@ function myalert_a()
     a.onmousedown = function()
     {
     var fereastra = document.createElement("p");
-    var text = "Sunteti pe prima pagina";
+    var text = "Sunteti pe pagina de prezentare";
     fereastra.innerHTML = text;
     var locatie = document.getElementById("ferPU1");
     locatie.appendChild(fereastra);
@@ -17,6 +17,8 @@ function myalert_a()
     fereastra.style.width="20%";
     fereastra.style.height="50px";
     fereastra.style.marginLeft="40%";
+    fereastra.style.zIndex="1";
+    fereastra.style.position="fixed";
     }       
 }
 function mouseUP()

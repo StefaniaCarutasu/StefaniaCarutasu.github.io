@@ -12,21 +12,31 @@
 		<link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" type="image/x-icon" href="Poze/favicon.png"/>
         <link rel="stylesheet" type="text/css" href="CSS/stil_idex.css">
-
-		<script src = "/js/script-meniu.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/stilInreg.css">
+		<link rel="stylesheet" type="text/css" href="CSS/stilLogare.css">
+		<link rel="stylesheet" type="text/css" href="CSS/meniu.css">
 		
+		<script src = "/js/script-meniu.js"></script>
+		<style>
+			#mesaj
+			{
+				color: blanchedalmond;
+				margin-top: 5%;
+				margin-left: 40%;
+			}
+		</style>
 		<title> 404 :( </title>
 	</head> 
 	
 	<body>
-		
+		<%- include('../fragmente/headerlivrari.ejs') %>
 		<main>
-			<section>
+			<section id="mesaj">
             <h1 style = "text-align: centre"> Hopa! </h1>
             <p style = "text-align: centre"> Din pacate nu am putut sa iti oferim ceea ce cautai</p>
-            <p> <a href = "/index" style = "text-decoration: none; color: black;"> Apasa aici ca sa te intorci </a> </p>
+            <p> <a href = "/index" style = "text-decoration: none; color: blanchedalmond;"> Apasa aici ca sa te intorci </a> </p>
 			</section>
-			<figure><img src="../Poze/404.jpg" style = "display: block; width: 100%; height: auto;">
+			<figure><img src="../Poze/404.jpg" style = "display: block; width: 50%; height: auto; margin-left: 25%;">
 		</main>
 	</body>
 </html>

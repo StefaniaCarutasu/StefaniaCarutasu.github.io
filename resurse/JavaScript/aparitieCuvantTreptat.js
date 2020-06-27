@@ -1,8 +1,7 @@
-
 var i = 0;
 var txt = 'Cafeneaua noastra isi propune sa le ofere clientilor ei cea mai buna cafea din oras, dar si atmosfera linistita si placuta a propriului camin. In fiecare zi avem grija sa pregatim cu drag pentru toti cei ce ne trec pragul. Cafeaua noastra 100% Arabica, este o cafea de specialitate, certificată CSC (Certified Specialty Coffee) și se numără printre puținele cafele de pe piață, certificate “de specialitate”.';
 txt = txt.split(' ');
-var speed = 250;
+var speed = 333;
 
 function typeWriter() {
   if (i < txt.length) {
@@ -23,6 +22,9 @@ function typeWriter2()
         setTimeout(typeWriter2, speed);
       }
 }
+function tastaApasata() {
+  alert("Verificati daca ati introdus valoarea corecta!");
+}
 window.onload = function()
 {
     typeWriter();
@@ -32,7 +34,7 @@ window.onload = function()
     afisVarsta();
     pagActiva();
     myalert_a();
-    
+   tastaApasata()
 }
 
 

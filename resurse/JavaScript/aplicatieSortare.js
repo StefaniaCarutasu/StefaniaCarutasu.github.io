@@ -46,7 +46,7 @@ btn2.onclick=function()
         divMare.appendChild(prod);
 }
 var btn3 = document.getElementById("faraAlergeni");
-btn3.onclick=function()
+btn3.onclick= function()
 {
     var produse = document.getElementsByClassName("templ_produse"); //array de divulete
     for(i=0; i<produse.length; i++)
@@ -103,5 +103,17 @@ btn5.onclick = function()
                 else if((tip.includes("Gustare") || tip.includes("Desert")) && pr == pretMinMancare)
                         gasitMancare = 1;
     }
+
+
+function afisamTot()
+{
+    
+    var produse = document.getElementsByClassName("templ_produse"); //array de divulete
+    for(i=0; i<produse.length; i++)
+        produse[i].classList.remove("ascunde")
 }
+setInterval(function(){alert("Sunteti nehotarat?")}, 4000);
+setTimeout(function(){ afisamTot();}, 3000);
+}
+
 }
