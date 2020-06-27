@@ -1,0 +1,90 @@
+<header >
+            <div class="header">
+            <div>
+            <nav>
+				<ul id = "meniu">
+					<li class = "left"> <a href = "/index">Acasa</a> </li>
+					<li class="left"> <a href = "/produse2">Galerie</a> </li>
+					<li class="left"> <a href = "/rezervari2">Produse</a> </li>
+                    <li class = "left" id = "sm"> <% if(!locals.username) {  %><a>Contul meu</a>
+						<ul id = "submeniu">
+							<li>
+					<button onclick="document.getElementById('SgnUpForm').style.display='block'" class="sgnUP">Sign up!</button>
+					<div id="SgnUpForm" class = "upForm">
+					<% if(!locals.rsstatus) { %><!-- verific daca status e definit-->
+						<form class = "continutUpForm date" method="post" action="inreg">
+						<div class = "containerForm"> 
+							<h1> Ingregistreaza-te!</h1>
+							<hr>
+							<label for = "username"><b>Username</b></label>
+							<input type="text" placeholder="Username" name="username" required>
+							<label for = "nume"><b>Nume utilizator</b></label>
+							<input type="text" placeholder="Nume" name="nume" required>
+							<label for = "prenume"><b>Prenume utilizator</b></label>
+							<input type="text" placeholder="Prenume" name="prenume" required>
+							<label for = "email"><b>Email</b></label>
+							<input type="text" placeholder="Email" name="email" required>
+							<label for = "parola"><b>Parola</b></label>
+							<input type="password" placeholder="Parola" name="parola" required>
+							<div class = "clearfix">
+								<button type="button" onclick = "document.getElementById('SgnUpForm').style.display='none'" class = "cancelbtn"> Cancel</button>
+								<button type="submit" class="signupbtn">Sign Up</button>
+							</div>	
+						</div>
+						</form>
+						 <% } else if(rsstatus=="ok"){ %>
+            <p>Date introduse</p>
+        <% } else {%>
+            <p>Eroare</p>
+        <% } %>
+					</div>
+					</li>
+					<li>
+						<button onclick="document.getElementById('LogInForm').style.display='block'" class = "logInBtn">Log in</button>
+						<div id="LogInForm" class = "InForm">
+						<span onclick="document.getElementById('LogInForm').style.display='none'" class="close" title = "Close">&times;</span>
+							<% if(!locals.username) {  %>
+						<form method="post" class = "continutLogIn" action = "/login">
+						<div class = "containerIn">
+							<label for = "username"><b>Username</b></label>
+							<input type="text" placeholder="Username" name="username" required>
+							<label for = "parola"><b>Parola</b></label>
+							<input type="password" placeholder="Parola" name="parola" required>
+							<div class = "clearfix" style="background-color:#f1f1f1">
+							<button type="submit" class = "loginbtn">Login</button>
+							<button type="button" onclick="document.getElementById('LogInForm').style.display='none'" class="cancelbtn1">Cancel</button>
+							<span class="psw">Forgot <a href="#">password?</a></span>
+							</div>
+						</div>
+						</form>
+						<% }%>
+						<% }
+						else { %>
+							<div id = "utilizLogat">
+						<div style="color: blanchedalmond;">Utilizator logat: <%= locals.username  %></div>
+						<button class = "cancelbtn"><a href="/logout">Logout</a></button></div>
+						<% } %>
+						</div>
+					<li>
+						</ul>
+                    </li>
+					
+				</ul>
+				
+			</nav>
+        </div>
+        <div class="Titlu_pagina">
+			<img id = "fer"  src="Poze/logo1.png" alt="Sigla pagina">
+			
+			<div id="getVarsta">
+				<p>Introduceti data nasterii in formatul dd#mm#yyyy:</p>
+				<div id="inputForm">
+					<input type="text" id="myAge">
+					<button type = "button" id = "butonVarsta">Try it</button>
+				</div>
+				<span id="varsta"></span>
+				</div>	
+				<div id="ferPU1" class="ferPU"><div class="modal-content"></div></div>
+        </div>
+        </div>
+    </header>

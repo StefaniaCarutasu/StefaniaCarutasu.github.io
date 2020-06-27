@@ -1,0 +1,49 @@
+.afis {
+    padding:0.7em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+.butoane
+{
+    padding:0.7em;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.templ_produse{
+    padding:0.4em;
+    color: blanchedalmond;
+    height: 90%;
+    border-right: 5px solid #9e2a2b;
+    border-bottom: 5px solid #9e2a2b;
+    border-left: 5px solid blanchedalmond;
+    border-top: 5px solid blanchedalmond;
+}
+.templ_produse:hover{
+    background-color: #ffebcd;
+    color: brown;
+    transition: background-color 0.8s;
+    transition: color 0.8s;
+}
+
+#sorteazaCrescator, #sorteazaDescrescator, #faraAlergeni, #afisTot, #afisOferta
+{
+    background-color: blanchedalmond;
+    color: #9e2a2b;
+    align-items: center;
+   
+}
+
+#sorteazaCrescator:hover, #sorteazaDescrescator:hover, #faraAlergeni:hover, #afisTot:hover, #afisOferta:hover
+{
+    background-color: rgb(228, 139, 139);
+    transition: background-color 0.5s;
+}
+
+.ascunde
+{
+    display: none;
+}
+
+

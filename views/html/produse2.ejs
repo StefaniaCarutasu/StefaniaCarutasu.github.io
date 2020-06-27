@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+        <title>Produse</title>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="cafea, cafenea, Bucuresti">
+		<meta name="author" content="Carutasu Stefania">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" type="image/x-icon" href="../Poze/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="../CSS/stil_produse.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/meniu.css">
+		<link rel="stylesheet" type="text/css" href="CSS/stilInreg.css">
+        <link rel="stylesheet" type="text/css" href="CSS/stilLogare.css">
+        <link rel="stylesheet" type="text/css" href="CSS/butonTop.css">
+		<link rel="stylesheet" type="text/css" href="CSS/popUP.css">
+        <script src="JavaScript/butonTop.js"></script>
+        <script src="JavaScript/logare.js"></script>
+        <script src="JavaScript/inregistrare.js"></script>
+        <script src="JavaScript/nrCuvinte.js"></script>
+        <script src="JavaScript/marcarePagActiva.js"></script>
+        <script src="JavaScript/popUP1.js"></script>
+        <script src="JavaScript/ravase.js"></script>
+
+    </head>
+    <body >
+        <%- include('../fragmente/headerproduse.ejs') %>
+        <main>
+            <section id = "ravas" class="popUPBtn"></section> <!--cand se va apasa pe ravas va fi afisata o fereastra-->>
+            <div id="ferPU1" class="ferPU">
+                <div class="modal-content">
+                    <p>Pentru a primi un nou ravas trebuie sa reincarcati pagina! Pentru a inchide fereastra apasati in afara ei!</p>    
+                </div>
+            </div>
+            <section class="galerie">
+            <div class="gr">
+                <figure class="container" >
+                    <img src="../Poze/cafea_prod1_700x400.jpg" class="image">
+                    <figcaption class="overlay">
+                        <div class="text"><h3>Latte</h3>
+                        <p>Pregatit cu grija in fiecare zi</p>
+                        <p>12 RON</p></div>
+                    </figcaption>
+                </figure>
+                <figure class="container">
+                    <img src="../Poze/espresso_700x400.jpg" class="image">
+                    <figcaption class="overlay">
+                        <div class="text"><h3>Espresso</h3>
+                        <p>Pregatit cu grija in fiecare zi</p>
+                        <p>7 RON</p></div>
+                    </figcaption>
+                </figure>
+                <figure class="container">
+                    <img src="../Poze/cafea_prod2_700x400.jpg"  class="image">
+                    <figcaption class="overlay">
+                        <div class="text">
+                            <div class="text"><h3>Americano</h3>
+                            <p>Pregatit cu grija in fiecare zi</p>
+                            <p>7 RON</p></div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="container">
+                    <img src="../Poze/cafea_prod_700x400.jpg"  class="image">
+                    <figcaption class="overlay">
+                        <div class="text"><h3>Cappuccino</h3>
+                        <p>Pregatit cu grija in fiecare zi</p>
+                        <p>10 RON</p></div>
+                    </figcaption>
+                </figure>  
+                <figure class="container">
+                    <img src="../Poze/ice_coffee_700x400.jpg"  class="image">
+                    <figcaption class="overlay">
+                        <div class="text"><h3>Cold brew</h3>
+                        <p>Pregatit cu grija in fiecare zi</p>
+                        <p>10 RON</p></div>
+                    </figcaption>
+                </figure>        
+                <figure class="container">
+                    <img src="../Poze/ceai_700x400.jpg"  class="image">
+                    <figcaption class="overlay">
+                        <div class="text">
+                            <div class="text"><h3>Ceai, diverse sortimente</h3>
+                            <p>Pregatit cu grija in fiecare zi</p>
+                            <p>10 RON</p></div>
+                        </div>
+                    </figcaption>
+                </figure>        
+                <figure class="container">
+                    <img src="../Poze/limonada_700x400.jpg"  class="image">
+                    <figcaption class="overlay">
+                        <div class="text">
+                            <div class="text"><h3>Limonada, diverse sortimente</h3>
+                            <p>Pregatit cu grija in fiecare zi</p>
+                            <p>12 RON</p></div>
+                        </div>
+                    </figcaption>
+                </figure>    
+                <figure class="container">
+                    <img src="../Poze/sandwich_prod_700x400.jpg"  class="image">
+                    <figcaption class="overlay">
+                        <div class="text">
+                            <div class="text"><h3>Sandwich cu sunca de curcan</h3>
+                            <p>Pregatit cu grija in fiecare zi</p>
+                            <p>10 RON</p></div>
+                        </div>
+                    </figcaption>
+                </figure>    
+                <figure class="container">
+                    <img src="../Poze/briose_700x400.jpg" class="image">
+                    <figcaption class="overlay">
+                        <div class="text"><h3>Briose</h3>
+                        <p>Pregatit cu grija in fiecare zi</p>
+                        <p>10 RON/2 bucati</p></div>
+                    </figcaption>
+                </figure>
+                <figure class="container">
+                    <img src="../Poze/prajitura_roz_prod_700x400.jpg"  class="image">
+                    <figcaption class="overlay">
+                        <div class="text">
+                           <div class="text"><h3>Cheescake cu fructe</h3>
+                            <p>Pentru pasionatii de dulciuri</p>
+                            <p>14 RON</p></div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="container">
+                    <img src="../Poze/biscuiti_prod_700x400.jpg"  class="image">
+                    <figcaption class="overlay">
+                        <div class="text"><h3>Biscuiti cu ciocolata</h3>
+                        <p>Pregatit cu grija in fiecare zi</p>
+                        <p>10 RON/3 bucati</p></div>
+                    </figcaption>
+                </figure>  
+                <figure class="container">
+                    <img src="../Poze/tiramisu_700x400.jpg"  class="image">
+                    <figcaption class="overlay">
+                        <div class="text"><h3>Tiramisu</h3>
+                        <p>Pregatit cu grija in fiecare zi</p>
+                        <p>15 RON</p></div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </main>
+        <%- include('../fragmente/footer.ejs') %>
+        
+    </body>
+</html>

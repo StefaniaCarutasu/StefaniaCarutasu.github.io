@@ -1,0 +1,140 @@
+{"produse": [
+{
+"tip": "Cafea",
+"nume": "Latte",
+"descriere": "Cafea cu spuma delicata de lapte",
+"gramaj": "300 mL",
+"alergeni": "lapte",
+"pret": 12,
+"bucati" : 1
+},
+
+{
+"tip": "Cafea",
+"nume": "Espresso",
+"descriere": "Cafea cu gust puternic",
+"gramaj": "100 mL",
+"alergeni": "nu are",
+"pret": 7,
+"bucati" : 1
+},
+
+{
+"tip": "Cafea",
+"nume": "Americano",
+"descriere": "Cafea",
+"gramaj": "250 mL",
+"alergeni": "nu are",
+"pret": 7,
+"bucati" : 1
+},
+
+{
+"tip": "Cafea",
+"nume": "Cappuccino",
+"descriere": "Cafea cu gust delicat si aroma de alune de padure",
+"gramaj": "300 mL",
+"alergeni": "alune, lapte",
+"pret": 10,
+"bucati" : 1
+},
+
+{
+"tip": "Cafea",
+"nume": "Cold Brew",
+"descriere": "Cafea rece",
+"gramaj": "350 mL",
+"alergeni": "nu are",
+"pret": 10,
+"bucati" : 1
+},
+
+{
+"tip": "Ceai",
+"nume": "Ceai",
+"descriere": "Ceai de fructe de padure, lamaie si ghimbir, verde, nergu, portocale",
+"gramaj": "250 mL",
+"alergeni": "nu are",
+"pret": 10,
+"bucati" : 1
+},
+
+{
+"tip": "Racoritoare",
+"nume": "Limonada",
+"descriere": "Simpla cu miere sau zahar, capsuni, cirese, fructe de padure, fructul pasiunii, trandafir",
+"gramaj": "300 mL",
+"alergeni": "nu are",
+"pret": 12,
+"bucati" : 1
+},
+
+{
+"tip": "Gustare",
+"nume": "Sandwich cu sunca de curcan",
+"descriere": "Paine proaspata, salata, rosii si sunca de curcan",
+"gramaj": "400 g",
+"alergeni": "nu are",
+"pret": 10,
+"bucati" : 1
+},
+
+{
+"tip": "Desert",
+"nume": "Briose",
+"descriere": "Briose de ciocolata sau vanilie cu crema fina",
+"gramaj": "100 g",
+"alergeni": "alune, lapte",
+"pret": 10,
+"bucati" : 2
+},
+
+{
+"tip": "Desert",
+"nume": "Cheesecake cu fructe de padure",
+"descriere": "Prajitura cu crema fina de branza si fructe proaspete",
+"gramaj": "350 g",
+"alergeni": "nu are",
+"pret": 14,
+"bucati" : 1
+},
+{
+"tip": "Desert",
+"nume": "Biscuiti cu fulgi de ciocolata",
+"descriere": "Biscutiti cu ciocolata",
+"gramaj": "50 g",
+"alergeni": "nu are",
+"pret": 10,
+"bucati" : 3
+
+},
+{
+"tip": "Desert",
+"nume": "Tiramisu",
+"descriere": "Tiramisu cu crema de mascarpone si frisca",
+"gramaj": "300 g",
+"alergeni": "frisca",
+"pret": 15,
+"bucati" : 1
+}
+]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

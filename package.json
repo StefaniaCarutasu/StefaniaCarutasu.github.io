@@ -1,0 +1,31 @@
+{
+  "name": "cafenea",
+  "version": "1.0.0",
+  "description": "site pentru cafenea",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefaniaCarutasu/StefaniaCarutasu.github.io.git"
+  },
+  "keywords": [
+    "cafea",
+    "cafenea",
+    "evenimente",
+    "prajituri"
+  ],
+  "author": "stefania carutasu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StefaniaCarutasu/StefaniaCarutasu.github.io/issues"
+  },
+  "homepage": "https://github.com/StefaniaCarutasu/StefaniaCarutasu.github.io#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "formidable": "^1.2.2"
+  }
+}
