@@ -1,20 +1,20 @@
 			
-/* The Modal (background) */
+/* Backgound */
 .ferPU {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 15%; /* Location of the box */
+  display: none; /* default e ascuns */
+  position: fixed; 
+  z-index: 1; /* il vreau in fata */
+  padding-top: 15%; 
   left: auto;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%; 
+  height: 100%; 
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(197, 113, 113); /* Fallback color */
+  background-color: rgb(197, 113, 113); 
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 			
-/* Modal Content */
+/* Continut */
 .modal-content {
   background-color: rgb(236, 149, 149);
   margin: auto;
@@ -22,3 +22,4 @@
   border: 1px solid #888;
   width: 80%;
 }
+

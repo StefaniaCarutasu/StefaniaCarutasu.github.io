@@ -32,6 +32,7 @@ window.onload = function()
     afisVarsta();
     pagActiva();
     myalert_a();
+    
 }
 
 

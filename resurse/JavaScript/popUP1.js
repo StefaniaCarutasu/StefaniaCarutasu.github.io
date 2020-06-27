@@ -1,6 +1,6 @@
 function myalert_b()
 {
-var modal = document.getElementById("ferPU1");
+var modal = document.getElementById("ferPU");
 var btn = document.getElementsByClassName("popUPBtn")[0];
 btn.onclick = function() {
   modal.style.display = "block";

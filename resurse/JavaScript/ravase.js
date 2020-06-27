@@ -9,12 +9,12 @@ function afisRavas()
     p.innerHTML = rav;
     var spn = document.getElementById("ravas");
     spn.appendChild(p);
-    //document.getElementById("ravas").innerHTML += rav;
    
 }
 afisRavas();
 pagActiva();
 numaraCuvinte();
-myalert_b()
+myalert_b();
+mouseUP();
 }
 
