@@ -1,15 +1,15 @@
 function pagActiva()
 {
-    adr = window.location.href.split("/");
-    adr_curenta = adr[adr.length - 1];
+    adresa = window.location.href.split("/");
+    adresa_curenta = adresa[adresa.length - 1];
     meniu = document.getElementsByTagName("nav")[0];
     a = meniu.getElementsByTagName("a");
 
     for(let i = 0; i < a.length; i++)
     {
-        a_adr = a[i].href.split("/");
-        a_adr = a_adr[a_adr.length - 1];
-        if(a_adr == adr_curenta){
+        a_adresa = a[i].href.split("/");
+        a_adresa = a_adresa[a_adresa.length - 1];
+        if(a_adresa == adresa_curenta){
             a[i].parentNode.classList.add("curent");
         }
     }

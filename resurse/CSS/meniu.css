@@ -26,8 +26,6 @@ body{
 	margin-right: auto;
 	display: grid;
 	grid-template-columns: auto auto;
-	/*display: flex;
-	flex-direction: row;*/
 }
 .Titlu_pagina img{
 	align-self: auto;
